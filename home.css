@@ -1,0 +1,418 @@
+*{
+	/*font-family:calibri;*/
+	text-decoration: none;
+}
+
+/*Page1*/
+
+#page1{
+	background:#1197a5; width: 100%; height: 100vh; text-align: center;
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 3;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+    0%   {background-color:#d32f2f;}
+    20%  {background-color:#f6350a;}
+    40%  {background-color:#388e3c;}
+    60%  {background-color:#1197a5;}
+    80% {background-color:#ad47bc;}
+    100%   {background-color:#d32f2f;}
+}
+
+@keyframes example {
+    0%   {background-color:#d32f2f;}
+    20%  {background-color:#f6350a;}
+    40%  {background-color:#388e3c;}
+    60%  {background-color:#1197a5;}
+    80% {background-color:#ad47bc;}
+    100%   {background-color:#d32f2f;}
+}
+
+/*Kunal Image*/
+
+#KunalImage{
+	/*width: 34%; margin:0% 33%;*/height:50vh; position:absolute; top:50%; left:50%; transform:translate(-50%,-75%);
+    animation-name: imageA;
+    animation-duration: 1.0s;
+    animation-timing-function: cubic-bezier(0,0,1,1);
+    -webkit-animation-name: imageA;
+    -webkit-animation-duration: 1.0s;
+    -webkit-animation-timing-function: cubic-bezier(0,0,1,1);
+}
+@-webkit-keyframes imageA{
+    0%   {transform:translate(-50%,-65%); opacity: 0.0;}
+    20%  {transform:translate(-50%,-67%); opacity: 0.1;}
+    40%  {transform:translate(-50%,-69%); opacity: 0.2;}
+    60%  {transform:translate(-50%,-71%); opacity: 0.35;}
+    80%  {transform:translate(-50%,-73%); opacity: 0.5;}
+    100%  {transform:translate(-50%,-75%); opacity: 1.0;}
+}
+@keyframes imageA{
+    0%   {transform:translate(-50%,-65%); opacity: 0.0;}
+    20%  {transform:translate(-50%,-67%); opacity: 0.1;}
+    40%  {transform:translate(-50%,-69%); opacity: 0.2;}
+    60%  {transform:translate(-50%,-71%); opacity: 0.35;}
+    80%  {transform:translate(-50%,-73%); opacity: 0.5;}
+    100%  {transform:translate(-50%,-75%); opacity: 1.0;}
+}
+
+#name{
+    position:absolute; color:white; top:60%; left:50%; transform:translate(-50%, 0%); font-family: 'Open Sans', sans-serif; font-size:60px; width: 100%;
+    animation-name: appear;
+    animation-duration: 1.0s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1.0s;
+}
+#work{
+    position:absolute; color:white; top:72.5%; left:50%; transform:translate(-50%, 0%); font-family: 'Open Sans', sans-serif; font-size:18px; width:100%;
+    animation-name: appear;
+    animation-duration: 1.0s;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 1.0s;
+}
+@keyframes appear{
+    0%{opacity: 0.0;}
+    50%{opacity: 0.1;}
+    100%{opacity: 1.0;}
+}
+@-webkit-keyframes appear{
+    0%{opacity: 0.0;}
+    50%{opacity: 0.1;}
+    100%{opacity: 1.0;}
+}
+/*Navigation Bar*/
+
+#navBar{
+	width: 100%; background: transparent; text-align: center; margin-top: 5vh; font-family: 'Open Sans', sans-serif;
+	animation-name: animateNavBar;
+    animation-duration: 3.3s;
+    -webkit-animation-name: animateNavBar;
+    -webkit-animation-duration: 3.3s;
+}
+@keyframes animateNavBar{
+	0% {opacity: 0.0}
+	85% {opacity: 0.0}
+	100% {opacity: 1.0}
+}
+@-webkit-keyframes animateNavBar{
+	0% {opacity: 0.0}
+	85% {opacity: 0.0}
+	100% {opacity: 1.0}
+}
+
+#navBar div a{
+	color: white; font-size: 24px;
+}
+#navBar div a:hover{
+	text-decoration: none;
+	font-size: 26px;
+}
+
+/*Social Bar*/
+
+#socialDiv{
+	position: absolute; bottom: 10vh; width:100%; text-align: center;
+}
+#socialBar{
+	width: 30%; margin: 0% 35%; background: transparent; text-align: center;
+}
+#socialIcon{
+	width: 30px;
+}
+#facebook{
+	animation-name: animateFacebook;
+    animation-duration: 1.3s;
+    -webkit-animation-name: animateFacebook;
+    -webkit-animation-duration: 1.3s;
+}
+@keyframes animateFacebook{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    81%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+@-webkit-keyframes animateFacebook{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    81%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+#github{
+	animation-name: animateGithub;
+    animation-duration: 1.6s;
+    -webkit-animation-name: animateGithub;
+    -webkit-animation-duration: 1.6s;
+}
+@keyframes animateGithub{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    84%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+@-webkit-keyframes animateGithub{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    84%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+#twitter{
+	animation-name: animateTwitter;
+    animation-duration: 1.9s;
+    -webkit-animation-name: animateTwitter;
+    -webkit-animation-duration: 1.9s;
+}
+@keyframes animateTwitter{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    84%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+@-webkit-keyframes animateTwitter{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    84%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+#insta{
+	animation-name: animateInsta;
+    animation-duration: 2.2s;
+    -webkit-animation-name: animateInsta;
+    -webkit-animation-duration: 2.2s;
+}
+@keyframes animateInsta{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    86%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+@-webkit-keyframes animateInsta{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    86%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+#resume{
+	animation-name: animateResume;
+    animation-duration: 2.5s;
+    -webkit-animation-name: animateResume;
+    -webkit-animation-duration: 2.5s;
+}
+@-webkit-keyframes animateResume{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    88%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+@keyframes animateResume{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    88%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+#linkedin{
+	animation-name: animateLinkedin;
+    animation-duration: 2.8s;
+    -webkit-animation-name: animateLinkedin;
+    -webkit-animation-duration: 2.8s;
+}
+@keyframes animateLinkedin{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    89%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+@-webkit-keyframes animateLinkedin{
+    0%   {opacity: 0.0; bottom:-5vh;}
+    25%  {opacity: 0.0; bottom:-5vh;}
+    50%  {opacity: 0.0; bottom: -2.5vh;}
+    89%  {opacity: 0.0; bottom: -1vh;}
+    100%  {opacity: 1.0; bottom: 0vh;}
+}
+#infoDivBox{
+	display: none; background: #455a64; position: absolute; top: 20px; width: 80%; margin:0% 10%; border-radius: 40px; margin-bottom: 20px;
+}
+#infoDiv{
+	width: 90%; margin: 0% 5%; margin-top:30px;
+}
+#infoDiv h1{
+	color: white; 
+}
+#infoDiv p{
+	color:white; font-size: 16px; margin-bottom: 30px; margin-left: 10px;
+}
+#buttonDiv{
+	width: 100%; text-align: center;
+}
+#button{
+	margin-bottom: 40px; margin-top: 20px;
+}
+
+/*page2*/
+#page2{
+	background: #e0e0e0; width: 100%; height: 100vh; text-align: center;
+}
+#pageHead{
+	margin-top: 5vh; font-family: 'Open Sans', sans-serif;
+}
+
+/*page3*/
+#page3{
+	background: #709693; width: 100%; height: 100vh; 
+}
+
+/*Responsive page*/
+
+#navBarResp{
+	display: none; position: absolute; top:5vh; left: 5vh; text-align: left;
+	animation-name: animateNavBar;
+    animation-duration: 3.3s;
+    -webkit-animation-name: animateNavBar;
+    -webkit-animation-duration: 3.3s;
+}
+#navBarResp span{
+	background: transparent; color: white; border: none; font-size: 30px;
+}
+#menuBar{
+    display:none; position:fixed; left:0%; top: 0%; height:100vh; background:white; width:300px;
+    padding-top:20px; box-shadow: 10px 0px 10px rgba(0,0,0,0.25);
+    animation-name: waveAnimate; 
+    animation-duration: 0.5s;
+    -webkit-animation-name: waveAnimate; 
+    -webkit-animation-duration: 0.5s;
+}
+@keyframes waveAnimate{
+    0%{left:-300px;}
+    100%{left:0px;}
+}
+@-webkit-keyframes waveAnimate{
+    0%{left:-300px;}
+    100%{left:0px;}
+}
+#menuBar li{
+    margin:10px;
+}
+#cross{
+    width:10%; margin-left:85%; margin-right:5%; margin-bottom:10px; background:transparent; font-size:30px;
+}
+#menuBar li a{
+    font-family: 'Roboto Mono', monospace; color:black; font-size: 24px;
+}
+
+@media (max-width: 1000px){
+	/*Page1*/
+	#navBar{
+		display: none;
+	}
+	#navBarResp{
+		display: block;
+	}
+	#KunalImage{
+		/*width: 50%; margin: 0% 25%;*/ height: 50vh;
+	}
+	#socialIcon{
+		width: 30px;
+	}
+}
+@media (max-width: 800px){
+	/*Page1*/
+	#navBar{
+		display: none;
+	}
+	#navBarResp{
+		display: block;
+	}
+	#socialIcon{
+		width: 20px; margin: 5px;
+	}
+	#socialBar{
+		width:60%; margin: 0% 20%;
+	}
+    #name{
+        font-size: 50px;
+    }
+}
+@media (max-width: 500px){
+	/*Page1*/
+	#navBar{
+		display: none;
+	}
+	#navBarResp{
+		display: block;
+	}
+	#KunalImage{
+		/*width: 80%; margin: 0% 10%;*/ height: 50vh;
+	}
+	#socialIcon{
+		width: 20px; margin: 5px;
+	}
+	#socialBar{
+		width:90%; margin: 0% 5%;
+	}
+    #name{
+        font-size: 40px;
+    }
+}
+@media (max-width: 350px){
+	/*Page1*/
+	#navBar{
+		display: none;
+	}
+	#navBarResp{
+		display: block;
+	}
+	#KunalImage{
+		/*width: 100%; margin: 0% 0%;*/ height: 50vh;
+	}
+	#socialIcon{
+		width: 20px; margin: 5px;
+	}
+	#socialBar{
+		width:80%; margin: 0% 10%;
+	}
+    #name{
+        font-size: 30px;
+    }
+}
+
+/*Height Resp*/
+@media (max-height: 600px){
+    #name{
+        font-size: 45px;
+    }
+}
+@media (max-height: 500px){
+    #name{
+        font-size: 24px; top:55%;
+    }
+    #work{
+        top:67.5%; font-size: 12px;
+    }
+    #socialIcon{
+        width: 20px; margin: 5px;
+    }
+    #menuBar li{
+        margin:0px;
+    }
+    #menuBar li a{
+    font-size: 12px;
+    }
+    #cross{
+        font-size:20px;
+    }
+}

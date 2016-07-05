@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Kunal Sheth</title>
+	<style type="text/css">a {text-decoration: none}</style>
+	<style type="text/css">li {list-style: none}</style>
+	<style type="text/css">a {text-decoration: none}</style>
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" href="home.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<script src="home.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="user-scalable=yes, width=600" />
+</head>
+<body id="body">
+	<div id="page1">
+		<img src="logo.png" id="KunalImage" onclick="displayInfo()">
+		<div class="container">
+			<div class="row" id = "navBar">
+				<div class="col-md-3"><a href="">Home</a></div>
+				<div class="col-md-3"><a href="awards/awards.html">Awards</a></div>
+				<div class="col-md-3"><a href="">Projects</a></div>
+				<div class="col-md-3"><a href="">Contact</a></div>
+			</div>
+			<div class="dropdown" id="navBarResp">
+				<span  class="glyphicon glyphicon-menu-hamburger" onclick="displayMenuBar()"></span>
+			</div>
+		</div>
+		<h1 id="name">I'm Kunal</h1>
+		<h5 id="work">Developer | Entrepreneur</h5>
+		<!--<a href="#page2" style="width:10%; margin:0% 45%;"><img src="arrowDown.png" style="width:25px; position:absolute; bottom: 15px;"></a>-->
+		<div id="socialDiv">
+			<div class="row" id="socialBar">
+				<div class="col-xs-2" id="facebook"><a href="https://www.facebook.com/kunalnsheth" target="_blank" style="target-new: tab;"><img src="facebook.png" id="socialIcon"></a></div>
+				<div class="col-xs-2" id="github"><a href="https://github.com/thekunalsheth" target="_blank" style="target-new: tab;"><img src="github.png" id="socialIcon"></a></div>
+				<div class="col-xs-2" id="twitter"><a href="https://twitter.com/Kunal_N_Sheth" target="_blank" style="target-new: tab;"><img src="twitter.png" id="socialIcon"></a></div>
+				<div class="col-xs-2" id="insta"><a href="https://www.instagram.com/the_kunal_sheth/?hl=en" target="_blank" style="target-new: tab;"><img src="instagram.png" id="socialIcon"></a></div>
+				<div class="col-xs-2" id="resume"><a href="kunal.pdf" target="_blank" style="target-new: tab;"><img src="resume.png" id="socialIcon"></a></div>
+				<div class="col-xs-2" id="linkedin"><a href="https://www.linkedin.com/in/kunal-sheth-b16522110?trk=hp-identity-name" target="_blank" style="target-new: tab;"><img src="linkedin.png" id="socialIcon"></a></div>
+			</div>
+		</div>
+		<div id="menuBar">
+			<span class="glyphicon glyphicon-remove" onclick="hideMenuBar()" id="cross"></span>
+			<li><a href="">Home</a><li><hr>
+			<li><a href="">Awards</a><li><hr>
+			<li><a href="">Projects</a><li><hr>
+			<li><a href="">Contact</a><li>
+		</div>
+	</div>
+	<div id="page2">
+		<div class="container">
+			<h1 id="pageHead">Who am I?</h1>
+			<div class="row" style="margin-top:10vh;">
+				<div class="col-md-4">
+					<img src="KunalCoding.jpg" class="img-circle" style="height:40vh; padding:5px;">
+				</div>
+				<div class="col-md-4">
+					<img src="KunalEntrepreneur.jpg" class="img-circle" style="height:40vh; padding:5px;">
+				</div>
+				<div class="col-md-4">
+					<img src="KunalAthlete.png" class="img-circle" style="height:40vh; padding:5px;">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="page3">
+	</div>
+</body>
