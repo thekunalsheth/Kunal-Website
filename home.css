@@ -288,13 +288,20 @@
 #navBarResp span{
 	background: transparent; color: white; border: none; font-size: 30px;
 }
-#menuBar{
-    display:none; position:fixed; left:0%; top: 0%; height:100vh; background:white; width:300px;
+.menuBar{
+    position:fixed; left:0%; top: 0%; height:100vh; background:white; width:300px; margin-right:300px;
     padding-top:20px; box-shadow: 10px 0px 10px rgba(0,0,0,0.25);
-    animation-name: waveAnimate; 
-    animation-duration: 0.5s;
-    -webkit-animation-name: waveAnimate; 
-    -webkit-animation-duration: 0.5s;
+}
+.sideMenu{
+-webkit-transition: all 1s ease;  
+  -moz-transition: all 1s ease;  
+  -o-transition: all 1s ease;  
+  -ms-transition: all 1s ease;  
+  transition: all 1s ease;
+}
+.sideMenu-active{
+	position:fixed; left:0%; top: 0%; height:100vh; background:white; width:300px; margin-right:0px;
+    padding-top:20px; box-shadow: 10px 0px 10px rgba(0,0,0,0.25);
 }
 @keyframes waveAnimate{
     0%{left:-300px;}
